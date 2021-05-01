@@ -101,7 +101,7 @@ header ul li a {
   justify-content: flex-end;
   padding-right: 50px;
   margin-top: 50px;
-  transform: rotate(-10deg);
+  transform: rotate(-3deg);
 }
 .content .imgBox img {
   max-width: 400px;
