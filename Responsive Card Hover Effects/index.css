@@ -31,7 +31,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   border-radius: 10px;
-  /* transition: 0.5s cubic-bezier(1, 0, 0, 1); */
   background: linear-gradient(45deg, #011331, #1c518f);
 }
 .container .card img {
@@ -111,7 +110,7 @@ body {
   .container .card .content {
     padding: 30px;
   }
-  .container .card:hover img{
+  .container .card:hover img {
     height: 300px;
   }
 }
