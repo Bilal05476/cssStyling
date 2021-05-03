@@ -2,6 +2,7 @@
 
 :root {
   --transition--: 0.5s cubic-bezier(1, 0, 0, 1);
+  --box-shadow--: 10px 10px 2px rgba(5, 0, 0, 0.25);
 }
 
 * {
@@ -15,7 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: chartreuse;
+  background: linear-gradient(140deg, #212121, #424242);
 }
 .card {
   position: relative;
@@ -23,15 +24,46 @@ body {
   height: 400px;
   background: #fff;
   transform-style: preserve-3d;
-  transform: perspective(100px);
-  box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+  transform: perspective(1000px);
+  box-shadow: var(--box-shadow--);
+  transition: var(--transition--);
 }
 
-.imgBox{
+.card:hover{
+    transform: translateX(150px);
+}
+
+.card .imgBox{
     position: relative;
     width: 100%;
-    height: 1000%;
+    height: 100%;
     z-index: 1;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    background-color: #000;
+    transition: var(--transition--);
+    box-shadow: var(--box-shadow--);
+}
+
+.card:hover .imgBox{
+    transform: rotateY(-180deg);
+    cursor: pointer;
+}
+
+.card .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.card .imgBox img:nth-child(2){
+    transform: rotateY(180deg);
+    cursor: pointer;
 }
 
 .card .details {
