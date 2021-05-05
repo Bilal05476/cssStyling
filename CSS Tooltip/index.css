@@ -3,9 +3,9 @@
 :root {
   --transition--: 0.5s cubic-bezier(1, 0, 0, 1);
   --blackDeep--: #212121;
-  --blackLight-- : #424242;
-  --whiteColor-- :#ffffff;
-  --boxShadow-- : rgba(0, 0, 0, 0.1);
+  --blackLight--: #424242;
+  --whiteColor--: #ffffff;
+  --boxShadow--: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -58,19 +58,19 @@ body {
   color: var(--blackLight--);
   font-weight: 500;
 }
-.navigation ul li a .icon{
+.navigation ul li a .icon {
   position: relative;
   display: block;
   line-height: 60px;
   text-align: center;
   font-size: 1.5em;
 }
-.navigation ul li:hover a .icon{
+.navigation ul li:hover a .icon {
   color: var(--whiteColor--);
   transition: var(--transition--);
 }
 
-.navigation ul li a .title{
+.navigation ul li a .title {
   position: absolute;
   left: 70px;
   display: block;
@@ -83,14 +83,14 @@ body {
   visibility: hidden;
   opacity: 0;
 }
-.navigation ul li:hover a .title{
+.navigation ul li:hover a .title {
   transform: translateY(-15%) translateX(10px);
   visibility: visible;
   opacity: 1;
   transition: var(--transition--);
 }
-.navigation ul li a .title::before{
-  content: '';
+.navigation ul li a .title::before {
+  content: "";
   position: absolute;
   top: 48%;
   left: -7px;
