@@ -2,6 +2,10 @@
 
 :root {
   --transition--: 0.5s cubic-bezier(1, 0, 0, 1);
+  --blackDeep--: #212121;
+  --blackLight-- : #424242;
+  --whiteColor-- :#ffffff;
+  --boxShadow-- : rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -14,5 +18,85 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #212121;
+  min-height: 100vh;
+  background: var(--blackDeep--);
+}
+.navigation {
+  position: relative;
+  width: 70px;
+  height: 300px;
+  background: var(--whiteColor--);
+  border-radius: 10px;
+  box-shadow: 0 15px 25px var(--boxShadow--);
+}
+.navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  border-radius: 10px;
+  width: 70px;
+  height: 60px;
+  border: 2px solid var(--whiteColor--);
+  box-sizing: border-box;
+}
+.navigation ul li:hover {
+  background: var(--blackLight--);
+  transition: var(--transition--);
+}
+.navigation ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: var(--blackLight--);
+  font-weight: 500;
+}
+.navigation ul li a .icon{
+  position: relative;
+  display: block;
+  line-height: 60px;
+  text-align: center;
+  font-size: 1.5em;
+}
+.navigation ul li:hover a .icon{
+  color: var(--whiteColor--);
+  transition: var(--transition--);
+}
+
+.navigation ul li a .title{
+  position: absolute;
+  left: 70px;
+  display: block;
+  background: var(--whiteColor--);
+  width: auto;
+  padding: 5px 10px;
+  transform: translateY(-15%) translateX(0px);
+  border-radius: 6px;
+  box-shadow: 0 5px 15px var(--boxShadow--);
+  visibility: hidden;
+  opacity: 0;
+}
+.navigation ul li:hover a .title{
+  transform: translateY(-15%) translateX(10px);
+  visibility: visible;
+  opacity: 1;
+  transition: var(--transition--);
+}
+.navigation ul li a .title::before{
+  content: '';
+  position: absolute;
+  top: 48%;
+  left: -7px;
+  width: 12px;
+  height: 12px;
+  background: var(--whiteColor--);
+  transform: rotate(45deg) translateY(-50%);
+  border-radius: 2px;
 }
