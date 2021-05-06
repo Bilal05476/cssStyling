@@ -38,7 +38,8 @@ section .container {
   width: 800px;
   height: 500px;
   background: var(--blackMid2--);
-  box-shadow: var(--boxShadow--);
+  box-shadow: 0 15px 25px var(--boxShadow--);
+  border-radius: 10px;
   overflow: hidden;
 }
 section .container .user {
@@ -207,11 +208,14 @@ body.light section .container .user .formBx .signin,
 body.light section .container .user .formBx .signup {
   color: var(--blackMid2--);
 }
-@media(max-width: 667px){
-  section .container .user .imgBx{
+body.light section .container .user .formBx input[type="submit"] {
+  box-shadow: 2px 4px 8px var(--blackLight--);
+}
+@media (max-width: 667px) {
+  section .container .user .imgBx {
     width: 0%;
   }
-  section .container .user .formBx{
+  section .container .user .formBx {
     width: 100%;
   }
 }
