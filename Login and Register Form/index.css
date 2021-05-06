@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --transition--: 0.5s cubic-bezier(1, 0, 0, 1);
+  --blackDeep--: #212121;
+  --blackMid--: #282828;
+  --blackMid2--: #343434;
+  --blackLight--: #424242;
+  --whiteColor--: #ffffff;
+  --boxShadow--: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blackLight--);
+}
+
+.toggle {
+  position: absolute;
+  top: 20px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  background: var(--whiteColor--);
+  cursor: pointer;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.toggle::before {
+  content: "\f185";
+  font-family: fontAwesome;
+  font-size: 24px;
+}
+body.light .toggle {
+  background: var(--blackMid--);
+  color: var(--whiteColor--);
+}
+body.light .toggle::before {
+  content: "\f186";
+  font-family: fontAwesome;
+}
+body.light {
+  background: var(--whiteColor--);
+}
+body.light .container .card .box {
+  background: var(--whiteColor--);
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+body.light .container .card:hover .box {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+body.light .container .card .box .content {
+  color: var(--blackDeep--);
+}
+body.light .container .card .box .content .icon {
+  color: var(--whiteColor--);
+}
+body.light .container .card {
+  box-shadow: inset 5px 5px 5px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.1),
+    5px 5px 15px rgba(255, 255, 255, 0.3), -5px -5px 15px rgba(0, 0, 0, 0.1);
+}
