@@ -5,7 +5,7 @@
   --blackDeep--: #212121;
   --blackLight--: #424242;
   --whiteColor--: #ffffff;
-  --boxShadow--: rgba(0, 0, 0, 0.1);
+  --about--: rgb(84, 168, 0);
 }
 
 * {
@@ -33,7 +33,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
   transition: var(--transition--);
   overflow: hidden;
 }
@@ -45,7 +45,7 @@ a::before {
   left: 0;
   width: 4px;
   height: 100%;
-  background: rgb(84, 168, 0);
+  background: var(--about--);
   transition: var(--transition--);
   transition-delay: 0.5s;
 }
@@ -56,7 +56,7 @@ a::after {
   right: 0;
   width: 4px;
   height: 100%;
-  background: rgb(84, 168, 0);
+  background: var(--about--);
   transition: var(--transition--);
   transition-delay: 0.5s;
 }
@@ -95,5 +95,4 @@ a:hover span:nth-child(2) {
   opacity: 1;
   z-index: 10;
   transition-delay: 0.2s;
-  
 }
