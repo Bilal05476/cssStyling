@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
-
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script:regular,500,600,700);
 * {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background-color: rgb(255, 215, 255);
+  background-color: rgb(234, 189, 255);
   padding: 2rem;
 }
 .container {
@@ -15,4 +15,70 @@ body {
   border-radius: 2rem;
   padding: 2rem;
   padding-left: 4rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo{
+  display: flex;
+  align-items: center;
+}
+.header .logo h4{
+  font-family: 'Dancing Script', cursive;
+  color: rgb(67, 13, 92);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.header .logo img{
+  width: 15%;
+}
+
+.header .menues {
+  display: flex;
+  align-items: center;
+  margin-right: 4rem;
+}
+.header .menues .link {
+  list-style: none;
+  margin-right: 2rem;
+  color: rgb(113, 72, 133);
+}
+.header .menues .link:nth-child(1){
+  color: rgb(67, 13, 92) !important;
+  border-bottom: .1rem solid rgb(67, 13, 92);
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+/*Credits*/
+.container__credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__credit .credits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5rem;
+  background-color: #fff;
+  color: rgb(67, 13, 92);
+}
+.container__credit .credits h4 {
+  font-size: 0.9rem;
+}
+.container__credit .credits img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 0.7rem;
 }
