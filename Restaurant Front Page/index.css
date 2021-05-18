@@ -24,14 +24,14 @@ body {
   align-items: center;
   background: transparent;
 }
-.logo h5{
+.logo h5 {
   font-size: 2rem;
   margin-bottom: -1rem;
 }
 .logo span {
   font-size: 0.8rem;
   font-weight: 400;
-  padding-left: .3rem;
+  padding-left: 0.3rem;
 }
 .shoppping__cart {
   background-color: #000;
@@ -136,10 +136,27 @@ body {
   font-size: 0.8rem;
   margin-top: 2rem;
 }
-
-@media(max-width: 1256px){
+.lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.small__line,
+.large__line {
+  background: rgba(0, 0, 0, 0.253);
+  height: 1px;
+  width: 80%;
+  margin-bottom: 0.5rem;
+}
+.small__line {
+  width: 20%;
+}
+@media (max-width: 1256px) {
   .jumbotron .left__side button {
     flex-direction: column;
+  }
+  .shoppping__cart.card__cart {
+    margin-right: -7rem;
   }
 }
 @media (max-width: 992px) {
@@ -147,15 +164,30 @@ body {
   .cards {
     flex-direction: column;
   }
+  .jumbotron {
+    align-items: flex-start;
+  }
   .jumbotron .right__side .banner {
     width: 500px;
     margin-top: 3rem;
+    margin-left: 3rem;
   }
   .jumbotron .left__side button {
     flex-direction: row;
   }
   .commits {
     padding-left: 0.2rem;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .shoppping__cart.card__cart {
+    margin-right: -27rem;
+  }
+}
+@media (max-width: 860px) {
+.shoppping__cart.card__cart {
+    margin-right: -19rem;
   }
 }
 @media (max-width: 767px) {
@@ -164,6 +196,12 @@ body {
   }
   .shoppping__cart.card__cart {
     margin-right: -6rem;
-    margin-top: -1rem;
+  }
+  .container {
+    padding: 4rem !important;
+    padding-top: 2rem !important;
+  }
+  .jumbotron .left__side button {
+    width: 40%;
   }
 }
