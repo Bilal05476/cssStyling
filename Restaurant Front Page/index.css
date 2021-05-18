@@ -24,9 +24,14 @@ body {
   align-items: center;
   background: transparent;
 }
+.logo h5{
+  font-size: 2rem;
+  margin-bottom: -1rem;
+}
 .logo span {
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-weight: 400;
+  padding-left: .3rem;
 }
 .shoppping__cart {
   background-color: #000;
@@ -86,6 +91,7 @@ body {
 .jumbotron .right__side .banner {
   width: 700px;
 }
+
 .cards .card {
   display: flex;
   align-items: center;
@@ -103,9 +109,9 @@ body {
   box-shadow: 0.1rem 0.3rem 0.4rem rgba(0, 0, 0, 0.233);
   padding: 1rem;
   padding-bottom: 2rem;
-  padding-top: 5rem;
+  padding-top: 8rem;
   border-radius: 2rem;
-  margin-top: -7rem;
+  margin-top: -10rem;
   width: 70%;
 }
 .shoppping__cart.card__cart {
