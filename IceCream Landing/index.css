@@ -129,16 +129,22 @@ body {
 }
 
 .slider{
-  margin: 5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3rem 0;
 }
-
-
 .slider__list {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.slider__list::-webkit-scrollbar{
+  display: none;
 }
 .slider__slide{
+  object-fit: contain;
   list-style: none;
   display: flex;
   align-items: center;
@@ -150,8 +156,8 @@ body {
   cursor: pointer;
 }
 .slider__slide img:hover{
-  transform: translateY(-10px);
-  transition: .5s;
+  transform: translateY(-7px);
+  transition: transform .5s;
 }
 .arrowRight{
   background: var(--darkPurple--);
