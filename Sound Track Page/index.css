@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --transition--: 0.5s cubic-bezier(1, 0, 0, 1);
+  --blackDeep--: #212121;
+  --blackMid--: #282828;
+  --blackMid2--: #343434;
+  --blackLight--: #424242;
+  --whiteColor--: #ffffff;
+  --signin--: #4c65f0;
+  --signup--: #00907d;
+  --boxShadow--: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.jumbotron{
+  background-image: url('./img/2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20rem 0;
+}
