@@ -7,8 +7,6 @@
   --blackMid2--: #343434;
   --blackLight--: #424242;
   --whiteColor--: #ffffff;
-  --signin--: #4c65f0;
-  --signup--: #00907d;
   --boxShadow--: rgba(0, 0, 0, 0.1);
 }
 
@@ -18,10 +16,126 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.jumbotron{
-  background-image: url('./img/2.jpg');
+body {
+  background-image: linear-gradient(to right, #000000, #014869);
+  padding: 5rem 2rem;
+}
+.container {
+  background-color: var(--whiteColor--);
+  padding: 1.2rem;
+  border-radius: 0.6rem;
+}
+.jumbotron {
+  background-image: url("./img/2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 20rem 0;
+  padding: 2rem;
+  border-radius: 0.6rem;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--blackDeep--);
+}
+.header h4 {
+  font-size: 0.7rem;
+}
+.header .nav a {
+  text-decoration: none;
+  color: var(--blackDeep--);
+  margin: auto 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.header button {
+  background: var(--whiteColor--);
+  border: none;
+  border-radius: 2rem;
+  font-weight: 500;
+  padding: 0.2rem 1.5rem;
+}
+.content {
+  padding: 3rem 4rem;
+  width: 50%;
+}
+.content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.5rem;
+  margin-bottom: 1.6rem;
+}
+.content .subtitle {
+  font-size: 0.9rem;
+  font-weight: 300 !important;
+}
+.contact__elem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--whiteColor--);
+  padding: 0.2rem 0.8rem;
+  border-radius: 2rem;
+  margin-top: 1.6rem;
+}
+.contact__elem button {
+  background: yellow;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.7rem 1.7rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.contact__elem .email p {
+  font-size: 0.5rem;
+  padding: 0.8rem;
+}
+.music__feature {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.music__cards {
+  display: flex;
+  align-items: center;
+}
+.music__card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2rem;
+  margin-top: 1.2rem;
+}
+.music__card img {
+  width: 180px;
+  height: 120px;
+  border-radius: 0.8rem;
+}
+.music__card strong {
+  margin-top: 0.8rem;
+}
+.weekly {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.weekly__music {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+.weekly__music .number {
+  padding: 0.6rem 1.2rem;
+  border: 0.1rem solid yellow;
+  border-radius: 50%;
+  margin-right: 1.1rem;
+}
+.music__card strong,
+.music__card p,
+.music__info .music__name,
+.music__info .music__palytime {
+  font-size: 0.8rem;
 }
