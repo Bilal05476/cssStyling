@@ -19,4 +19,4 @@ const generatePDF = async (name) => {
   document.querySelector("#certificate").src = uri;
 };
 
-generatePDF("Bilal Ahmed");
+generatePDF(prompt("Enter your Name"));
