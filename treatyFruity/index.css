@@ -119,13 +119,88 @@
 .statistics .box2 {
   border-right: 1px solid rgb(255, 155, 68);
 }
-.statistics .ins-profile {
+
+/*Flavors-Details*/
+.flavors-details {
+  padding: 6rem 10rem;
+}
+.flavors-details h2 {
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: sienna;
+}
+.flavor-details-box {
   display: flex;
   align-items: center;
+  margin-top: 6rem;
 }
-.statistics .ins-profile img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
+.flavor-details-box .image-background {
+  background: rgb(255, 236, 220);
+  width: auto;
+  padding: 2rem;
+  margin-right: 5rem;
+  padding-top: -5rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(255, 214, 181);
+}
+.flavor-details-box .image-background2 {
+  background: rgb(255, 236, 220);
+  width: auto;
+  padding: 2rem;
+  margin-left: 5rem;
+  padding-top: -5rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgb(255, 214, 181);
+}
+.flavor-details-box .top-square-dots {
+  width: 30%;
+  height: 100px;
+  margin-top: -5rem;
+  margin-left: -4rem;
+  clear: both;
+}
+.flavor-details-box .bottom-square-dots {
+  width: 30%;
+  height: 100px;
+  margin-bottom: -6rem;
+  margin-right: -9rem;
+  clear: both;
+}
+.flavor-details-box .flavor-img {
+  width: 350px;
+  height: 300px;
+}
+.flavor-content .flavor-name {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+.flavor-content p {
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+.quantity-details span {
+  color: peru;
+  font-size: 2rem;
+  margin-right: 1.2rem;
+  font-weight: 500;
+}
+.quantity-details p {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.quantity-details .sold {
+  margin-left: 1.2rem;
+}
+.flavor-content .details-btn {
+  padding: 0.7rem 1.5rem;
   margin-right: 1rem;
+  border: none !important;
+  outline: none !important;
+  box-shadow: 0.2rem 0.3rem 0.4rem #777;
+  cursor: pointer;
+  font-size: 0.6rem;
+  background: rgb(243, 159, 74);
+  color: #fff;
 }
